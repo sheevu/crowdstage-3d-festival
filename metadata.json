@@ -1,0 +1,6 @@
+{
+  "name": "CrowdStage",
+  "description": "Mobile-first interactive 3D virtual festival creator with WebGL2 stages, Web Audio reactive visuals, GPU-instanced crowds, smart lighting console, and live multiplayer rooms.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

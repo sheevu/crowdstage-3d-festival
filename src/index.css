@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', system-ui, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #080B1D;
+    color: #F1F5F9;
+    font-family: var(--font-sans);
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom sleek range inputs for touch & desktop lighting console */
+input[type='range'].crowd-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  outline: none;
+}
+
+input[type='range'].crowd-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #00E5FF;
+  border: 2px solid #080B1D;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.55);
+}
+
+input[type='range'].crowd-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #00E5FF;
+  border: 2px solid #080B1D;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.55);
+}
+
+/* Thin subtle scrollbars inside drawers */
+.crowd-scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.crowd-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.crowd-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+}
